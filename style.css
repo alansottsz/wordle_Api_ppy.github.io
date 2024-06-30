@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Cambria");
+body {
+    background-image: url("imag.jpg");
+    font-family: Cambria,sans-serif;
+    background-size:auto;
+}
+
+h1 {
+    font-size: 58px;
+    text-shadow: 4px 4px 8px rgba(19, 18, 18, 0.8); 
+    text-align: center;
+    margin-top: 80px;
+    color: #b08936;
+}
+
+#guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px;
+    font-size: 22px;
+    width: 280px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+#guess-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    font-size: 22px;
+    background-color: #b08936;
+    color: hsl(0, 0%, 99%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#play-again-button{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    font-size: 22px;
+    background-color: #bda625;
+    color: hsl(0, 0%, 99%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#play-again-button:hover {
+    background-color: #d1c167;
+}
+
+#play-again-button:active {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+.letter {
+    border: 1px solid rgb(255, 254, 254);
+    padding: 25px;
+    margin: 12px;
+    min-width: 45px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.row {
+    margin-bottom: 10px;
+    text-align: center;
+    opacity:0;
+    animation: aparecer 2s forwards;
+}
+
+.input-area {
+    margin: 30px;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        /* Inicio: oculto */
+    }
+
+    100% {
+        opacity: 1;
+        /* Fin: completamente visible */
+    }
+}
